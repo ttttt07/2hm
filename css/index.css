@@ -1,5 +1,6 @@
 body{background-color:grey;}
-body>div{width: 1000px;
+body>div{max-width: 1000px;
+    width:100%;
         margin: 0 auto;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;}
@@ -10,8 +11,10 @@ font-size: 45px;
 font-weight: 800;
 text-align: center;
 padding:5% 9% 5% 9%}
-section{padding: 4% 0 4% 9%;
-width: 680px;}
+.outsection{margin: 4% 5% 4% 9%;}
+section{
+    width: 100%;
+max-width: 500px;}
 h2+p{padding-top: 2%;}
 footer{color: white;
     background-color:  rgba(0, 0, 0, 0.774);}
@@ -20,12 +23,17 @@ footer{color: white;
         color: white;
        }
 nav{ background-color: rgba(0, 0, 0, 0.774);}
+.outside{
+    margin: 3% 9% 3% 1%;
+}
 .sidebar{background-color: rgba(0, 0, 0, 0.774);
     color:white;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     padding: 2% 0.3% 2% 1%;
-    margin-right: 9%;
-    margin-top: 3%;
+    /* top | right | bottom | left */
+
+   
 float: right;}
     body,h1,ul,p,h2{margin: 0px;}
 h1,ul{padding: 1% 0 1% 6%;}
@@ -34,15 +42,20 @@ footer>span{
 display: block;
 text-align: center;
 padding: 2% 0 2% 0;}
-@media(max-width: 600px) {
 
+
+@media(max-width: 600px) {
+  .outside{
+    margin-left: 9%;
+    margin-right: 9%;
+   
+  }
   .sidebar{
     float: none;
-    margin-left: 9%;
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
   }
  section{width: 100%;
-  max-width: 800px;
+  max-width: 500px;
 }
 }
